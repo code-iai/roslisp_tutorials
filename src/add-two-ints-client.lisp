@@ -38,14 +38,27 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
+;; tags for using the snippet in wiki
+;; %Tag(wikiTalker)%
+
 (in-package :roslisp-tutorials)
 
-(defun add (a b)
-  (sum-val (call-service "add_two_ints" 'AddTwoInts :a a :b b)))
-
-(defun add-two-ints-client ()
+(defun add-two-ints-client (a b)
+  "adds by calling ros service"
   (with-ros-node ("two_ints_client")
-    (if (wait-for-service "add_two_ints" 10)
-        (let ((a (1+ (round (mod (ros-time) 42)))) (b (1+ (round (mod (* 10 (ros-time)) 17)))))
-          (format t "~a + ~a = ~a~&" a b (add a b)))
-        (ros-warn nil "Timed out waiting for service add_two_ints"))))
+    (if (not (wait-for-service "add_two_ints" 10))
+      (ros-warn nil "Timed out waiting for service add_two_ints")
+      (format t "~a + ~a = ~a~&"
+              a b (sum (call-service "add_two_ints" 'AddTwoInts :a a :b b))))))
+
+
+(defun add-two-ints-client-main ()
+  ;; parse command line args
+  (let ((args (cdr sb-ext:*posix-argv*)))
+    (if (not (= 2 (length args)))
+      (ros-info (roslisp-tutorials) "Error ~a~%usage: add_two_ints_client X Y" args)
+      ;; else
+      (add-two-ints-client (parse-integer (first args))
+           (parse-integer (second args))))))
+
+;; %EndTag(wikiTalker)%
