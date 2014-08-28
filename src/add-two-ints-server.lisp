@@ -40,7 +40,6 @@
 
 ;; tags for using the snippet in wiki
 ;; %Tag(wikiTalker)%
-
 (in-package :roslisp-tutorials)
 
 (def-service-callback AddTwoInts (a b)
@@ -52,5 +51,4 @@
   (with-ros-node ("two_ints_server" :spin t)
     (register-service "add_two_ints" 'AddTwoInts)
     (ros-info (roslisp-tutorials) "Ready to add two ints.")))
-
 ;; %EndTag(wikiTalker)%

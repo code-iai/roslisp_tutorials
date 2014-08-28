@@ -40,7 +40,6 @@
 
 ;; tags for using the snippet in wiki
 ;; %Tag(wikiTalker)%
-
 (in-package :roslisp-tutorials)
 
 (defun talker ()
@@ -49,5 +48,4 @@
     (let ((i 0) (pub (advertise "chatter" "std_msgs/String")))
       (loop-at-most-every .1
          (publish-msg pub :data (format nil "foo ~a" (incf i)))))))
-
 ;; %EndTag(wikiTalker)%

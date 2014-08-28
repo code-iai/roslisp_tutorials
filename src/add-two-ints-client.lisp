@@ -40,7 +40,6 @@
 
 ;; tags for using the snippet in wiki
 ;; %Tag(wikiTalker)%
-
 (in-package :roslisp-tutorials)
 
 (defun add-two-ints-client (a b)
@@ -60,5 +59,4 @@
       ;; else
       (add-two-ints-client (parse-integer (first args))
            (parse-integer (second args))))))
-
 ;; %EndTag(wikiTalker)%
