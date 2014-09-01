@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>roslisp_tutorials</name>
+  <name>roslisp_tutorials_basics</name>
   <version>0.0.0</version>
-  <description>The roslisp_tutorials package</description>
+  <description>Code for tutorials on basics of roslisp</description>
 
   <maintainer email="kazhoyan@cs.uni-bremen.de">Gayane Kazhoyan</maintainer>
   <author>Bhaskara Marthi</author>

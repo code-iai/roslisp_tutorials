@@ -40,7 +40,7 @@
 
 ;; tags for using the snippet in wiki
 ;; %Tag(wikiTalker)%
-(in-package :roslisp-tutorials)
+(in-package :roslisp-tutorials-basics)
 
 (defun listener ()
   (with-ros-node ("listener" :spin t)

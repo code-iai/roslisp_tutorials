@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(roslisp_tutorials)
+project(roslisp_tutorials_basics)
 
 find_package(catkin REQUIRED COMPONENTS
   roslisp
@@ -33,18 +33,18 @@ include_directories(
 
 
 # rosbuild_add_lisp_executable(bin/talker
-#   roslisp-tutorials roslisp-tutorials:talker)
+#   roslisp-tutorials-basics roslisp-tutorials-basics:talker)
 # rosbuild_add_lisp_executable(bin/listener
-#   roslisp-tutorials roslisp-tutorials:listener)
+#   roslisp-tutorials-basics roslisp-tutorials-basics:listener)
 # rosbuild_add_lisp_executable(bin/add-two-ints-client
-#   roslisp-tutorials roslisp-tutorials:add-two-ints-client-main)
+#   roslisp-tutorials-basics roslisp-tutorials-basics:add-two-ints-client-main)
 # rosbuild_add_lisp_executable(bin/add-two-ints-server
-#   roslisp-tutorials roslisp-tutorials:add-two-ints-server)
+#   roslisp-tutorials-basics roslisp-tutorials-basics:add-two-ints-server)
 # rosbuild_add_lisp_executable(bin/params-example
-#   roslisp-tutorials roslisp-tutorials:params-example)
+#   roslisp-tutorials-basics roslisp-tutorials-basics:params-example)
 # rosbuild_add_lisp_executable(bin/rosout-example
-#   roslisp-tutorials roslisp-tutorials:rosout-example)
+#   roslisp-tutorials-basics roslisp-tutorials-basics:rosout-example)
 # rosbuild_add_lisp_executable(bin/array-talker
-#   roslisp-tutorials roslisp-tutorials:array-talker)
+#   roslisp-tutorials-basics roslisp-tutorials-basics:array-talker)
 # rosbuild_add_lisp_executable(bin/array-listener
-#   roslisp-tutorials roslisp-tutorials:array-listener)
+#   roslisp-tutorials-basics roslisp-tutorials-basics:array-listener)

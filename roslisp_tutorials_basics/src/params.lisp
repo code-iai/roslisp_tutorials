@@ -1,4 +1,4 @@
-(in-package :roslisp-tutorials)
+(in-package :roslisp-tutorials-basics)
 
 (defun params-example ()
   "Illustrates param operations."

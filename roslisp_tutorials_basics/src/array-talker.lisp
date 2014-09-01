@@ -1,4 +1,4 @@
-(in-package :roslisp-tutorials)
+(in-package :roslisp-tutorials-basics)
 
 (defun array-talker ()
   "Illustrates array and compound messages, and rosout functions."

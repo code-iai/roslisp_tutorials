@@ -1,4 +1,4 @@
-(in-package :roslisp-tutorials)
+(in-package :roslisp-tutorials-basics)
  
 (defun array-listener ()
   "Like listener, except illustrates an array message."

@@ -40,7 +40,7 @@
 
 ;; tags for using the snippet in wiki
 ;; %Tag(wikiTalker)%
-(in-package :roslisp-tutorials)
+(in-package :roslisp-tutorials-basics)
 
 (def-service-callback AddTwoInts (a b)
   (ros-info (roslisp-tutorials) "Returning [~a + ~a = ~a]" a b (+ a b))
