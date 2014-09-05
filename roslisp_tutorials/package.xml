@@ -12,7 +12,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   <run_depend>roslisp_tutorials_basics</run_depend>
-  <run_depend>roslisp_tutorials_turtlesim</run_depend>
+  <run_depend>roslisp_tutorials_turtles</run_depend>
 
   <export>
     <metapackage/>

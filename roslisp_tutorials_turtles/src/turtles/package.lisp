@@ -1,5 +1,5 @@
 
-(defpackage lispturtles-lisp-pkg
+(defpackage turtles-lisp-pkg
   (:nicknames :lturtle)
   (:use :roslisp :cl)
   (:export

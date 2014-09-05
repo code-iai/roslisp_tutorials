@@ -1,11 +1,11 @@
 
-(asdf:defsystem lispturtles-system
+(asdf:defsystem turtles-system
   :depends-on (roslisp
                turtlesim-msg
                geometry_msgs-msg
                turtlesim-srv)
   :components
-  ((:module "lispturtles"
+  ((:module "turtles"
     :components
     ((:file "package")
-     (:file "lispturtles-core" :depends-on ("package"))))))
+     (:file "turtles-core" :depends-on ("package"))))))

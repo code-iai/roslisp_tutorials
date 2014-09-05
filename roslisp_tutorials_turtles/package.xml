@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>roslisp_tutorials_turtlesim</name>
+  <name>roslisp_tutorials_turtles</name>
   <version>0.0.0</version>
   <description>Code for the second roslisp tutorial.</description>
 

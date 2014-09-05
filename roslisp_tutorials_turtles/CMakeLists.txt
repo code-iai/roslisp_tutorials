@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(roslisp_tutorials_turtlesim)
+project(roslisp_tutorials_turtles)
 
 find_package(catkin REQUIRED COMPONENTS
   roslisp
@@ -28,8 +28,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-catkin_add_lisp_executable(bin/circle lispturtles-system
-  lispturtles-lisp-pkg:turtle-circle)
+catkin_add_lisp_executable(bin/circle turtles-system turtles-lisp-pkg:turtle-circle)
 
 
 #############
