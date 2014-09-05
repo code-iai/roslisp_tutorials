@@ -32,19 +32,19 @@ include_directories(
 )
 
 
-# rosbuild_add_lisp_executable(bin/talker
-#   roslisp-tutorials-basics roslisp-tutorials-basics:talker)
-# rosbuild_add_lisp_executable(bin/listener
-#   roslisp-tutorials-basics roslisp-tutorials-basics:listener)
-# rosbuild_add_lisp_executable(bin/add-two-ints-client
-#   roslisp-tutorials-basics roslisp-tutorials-basics:add-two-ints-client-main)
-# rosbuild_add_lisp_executable(bin/add-two-ints-server
-#   roslisp-tutorials-basics roslisp-tutorials-basics:add-two-ints-server)
-# rosbuild_add_lisp_executable(bin/params-example
-#   roslisp-tutorials-basics roslisp-tutorials-basics:params-example)
-# rosbuild_add_lisp_executable(bin/rosout-example
-#   roslisp-tutorials-basics roslisp-tutorials-basics:rosout-example)
-# rosbuild_add_lisp_executable(bin/array-talker
-#   roslisp-tutorials-basics roslisp-tutorials-basics:array-talker)
-# rosbuild_add_lisp_executable(bin/array-listener
-#   roslisp-tutorials-basics roslisp-tutorials-basics:array-listener)
+catkin_add_lisp_executable(bin/talker
+  roslisp-tutorials-basics roslisp-tutorials-basics:talker)
+catkin_add_lisp_executable(bin/listener
+  roslisp-tutorials-basics roslisp-tutorials-basics:listener)
+catkin_add_lisp_executable(bin/add-two-ints-client
+  roslisp-tutorials-basics roslisp-tutorials-basics:add-two-ints-client-main)
+catkin_add_lisp_executable(bin/add-two-ints-server
+  roslisp-tutorials-basics roslisp-tutorials-basics:add-two-ints-server)
+catkin_add_lisp_executable(bin/params-example
+  roslisp-tutorials-basics roslisp-tutorials-basics:params-example)
+catkin_add_lisp_executable(bin/rosout-example
+  roslisp-tutorials-basics roslisp-tutorials-basics:rosout-example)
+catkin_add_lisp_executable(bin/array-talker
+  roslisp-tutorials-basics roslisp-tutorials-basics:array-talker)
+catkin_add_lisp_executable(bin/array-listener
+  roslisp-tutorials-basics roslisp-tutorials-basics:array-listener)

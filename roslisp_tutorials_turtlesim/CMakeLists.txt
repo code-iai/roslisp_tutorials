@@ -28,7 +28,8 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-#rosbuild_add_lisp_executable(bin/circle lispturtles-system lispturtles:turtle-circle)
+catkin_add_lisp_executable(bin/circle lispturtles-system
+  lispturtles-lisp-pkg:turtle-circle)
 
 
 #############
