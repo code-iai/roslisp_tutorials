@@ -28,7 +28,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-catkin_add_lisp_executable(circle turtles-system turtles-lisp-pkg:turtle-circle)
+add_lisp_executable(circle turtles-system turtles-lisp-pkg:turtle-circle)
 
 
 #############
